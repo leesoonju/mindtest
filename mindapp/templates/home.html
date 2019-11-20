@@ -9,11 +9,11 @@
         <h1>Eye Quiz</h1><br>
         <h2>아래 사진을 보고 어떤 감정을 느끼고 있을 지 맞춰보세요</h2><br>
         <form action="{% url 'result'%}">
-            <img src= "{% static '슬픔.jpg' %}" >
+            <img src= "{% static '슬픔.jpg' %}" ><br><br>
             <input type='radio' name='quiz1' value = '1'>
             <input type='radio' name='quiz1' value = '2'>
             <input type='radio' name='quiz1' value = '3'>
-            <input type='radio' name='quiz1' value = '4'><br>
+            <input type='radio' name='quiz1' value = '4'><br><br>
             <input type='submit' value='제출'>
         </form>
 ​
