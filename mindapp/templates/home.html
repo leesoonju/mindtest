@@ -4,24 +4,23 @@
         <meta charset='utf-8'>
         <title>홈</title> 
         {% load staticfiles %}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
-        <script src="{% static 'js/test.js'%}"></script>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">        
     </head>
     <body>
-        <h1>Eye Quiz</h1><br>
+        <h1></h1><br>
         <h2>아래 사진을 보고 어떤 감정을 느끼고 있을 지 맞춰보세요</h2><br>
         
         <nav>
         <ul>
         <img src= "{% static 'angry1.jpg' %}" height="200" width="300"><br><br>
-        <li onclick="click(0)">r</li>
-        <li onclick="click(1)">t</li>
-        <li onclick="click(2)">y</li>
-        <li onclick="click(3)">u</li>
+        <li onclick="click(0)"></li>
+        <li onclick="click(1)"></li>
+        <li onclick="click(2)"></li>
+        <li onclick="click(3)"></li>
         <br><br>
         </ul>
         </nav>
 
         <h2 id='결과창'></h2>
-        
+        <script src="{% static 'js/test.js'%}"></script>
     </body>
