@@ -10,16 +10,18 @@
     <body>
         <h1>Eye Quiz</h1><br>
         <h2>아래 사진을 보고 어떤 감정을 느끼고 있을 지 맞춰보세요</h2><br>
-        <form action="{% url 'result'%}">
-            <nav>
-            <ul>
-            <img src= "{% static 'happy1.jpg' %}" height="200" width="300"><br><br>
-            <li onclick="location.href='link'"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <br><br>
-            </ul>
-            </nav>
-        </form>​
+        
+        <nav>
+        <ul>
+        <img src= "{% static 'angry1.jpg' %}" height="200" width="300"><br><br>
+        <li onclick=click(0)>보기1</li>
+        <li onclick=click(1)>보기2</li>
+        <li onclick=click(2)>보기3</li>
+        <li onclick=click(3)>보기4</li>
+        <br><br>
+        </ul>
+        </nav>
+
+        <h2 id='결과창'></h2>
+        
     </body>
