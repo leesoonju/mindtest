@@ -5,22 +5,27 @@
         <title>홈</title> 
         {% load staticfiles %}
         <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">        
+        <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
     </head>
-    <body>
-        <h1></h1><br>
-        <h2>아래 사진을 보고 어떤 감정을 느끼고 있을 지 맞춰보세요</h2><br>
-        
-        <nav>
-        <ul>
-        <img src= "{% static 'angry1.jpg' %}" height="200" width="300"><br><br>
-        <li onclick="click('0')"></li>
-        <li onclick="click('1')"></li>
-        <li onclick="click('2')"></li>
-        <li onclick="click('3')"></li>
-        <br><br>
-        </ul>
-        </nav>
-
-        <h2 id='결과창'></h2>
-        <script src="{% static 'js/test.js'%}"></script>
+    <body style="font-family:'Jua', sans-serif;">
+        <div id="test">
+            <h1 style="font-size:70px"></h1><br>
+            <h2 style="font-size:40px">아래 사진을 보고 어떤 감정을 느끼고 있을 지 맞춰보세요</h2><br>
+            
+            <nav>
+            <img src= "{% static 'angry1.jpg' %}" height="400" width="600" style="margin-left:200px" ><br><br>
+            <ul style="display:inline-flex;">
+                <li onclick="f('0');" style="font-size:33px" style="font-weight: bold"></li>
+                <li onclick="f('1');" style="font-size:33px" style="font-weight: bold"></li>
+                <li onclick="f('2');" style="font-size:33px" style="font-weight: bold"></li>
+                <li onclick="f('3');" style="font-size:33px" style="font-weight: bold"></li>
+            <br><br>
+            </ul>
+            </nav>
+        </div>
+    <div>
+        <h2 style="font-size:70px" id='결과창'></h2>
+        <p style="font-size:30px" id='설명'></p>
+    </div>
+    <script src="{% static 'js/test.js'%}"></script>
     </body>
