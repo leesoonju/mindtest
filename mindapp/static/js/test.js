@@ -16,9 +16,9 @@ for(var i=0;i<4;i+=1){
 }
 
 
-function click(e,num){
+function click(num){
     console.log('1')
-    if(보기[count][num]===정답[count]) {
+    if(e.target.value===정답[count]) {
         점수+=1;        
     }
     count+=1;
@@ -32,4 +32,3 @@ function click(e,num){
         innerText=보기[count][i];
     }
 }
-
